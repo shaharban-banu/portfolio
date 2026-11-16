@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg:#f5f7fa; --fg:#0e1a2b; --muted:#56637a; --line:#d8dee8; --accent:#3b4ff0; --signal:#c76a0a; }
+.dark { --bg:#0c1524; --fg:#e8edf6; --muted:#93a1b8; --line:#22314a; --accent:#8ea2ff; --signal:#f0a04b; }
+
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--fg); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+.flow { stroke-dasharray: 4 7; animation: flow 2.6s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: -22; } }
+.node { transition: stroke .2s; }
+.graph:hover .node { stroke: var(--accent); }
+@media (prefers-reduced-motion: reduce) {
+  .flow { animation: none; }
+  html { scroll-behavior: auto; }
+}
