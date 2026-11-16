@@ -23,7 +23,7 @@ export const projects = [
     subtitle: "Multi-agent executive intelligence platform",
     year: "2025",
     featured: true,
-    repo: "",
+    repo: "https://github.com/shaharban-banu/execumind-ai",
     problem: "Turning e-commerce data into decisions means combining SQL analytics, customer feedback and forecasts in one place.",
     solution: "A dataset-agnostic platform where four LangGraph agents (Data Intelligence, Customer Intelligence, Forecasting and Executive Advisor) produce AI-generated business recommendations.",
     contribution: [
@@ -39,7 +39,7 @@ export const projects = [
     name: "Education RAG Chatbot",
     subtitle: "Curriculum-grounded tutor for fifth-grade students",
     year: "2025",
-    repo: "",
+    repo: "https://github.com/shaharban-banu/Education-RAG",
     problem: "Students need answers that stay within their NCERT textbooks.",
     solution: "A Streamlit chatbot that ingests textbook PDFs and answers using retrieved context and Llama 3.2 3B.",
     contribution: ["Built PDF ingestion, chunking, semantic embedding, vector retrieval and context-aware answer generation with LlamaIndex, LangChain and ChromaDB."],
