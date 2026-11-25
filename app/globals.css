@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg:#f4f7f8; --card:#ffffff; --fg:#0b0c10; --muted:#4b5563; --line:#d5dde0; --accent:#0e7490; --signal:#0f766e; --on-accent:#ffffff; }
+.dark { --bg:#0b0c10; --card:#1f2833; --fg:#e6e8ea; --muted:#a3adb5; --line:#2c3947; --accent:#66fcf1; --signal:#45a29e; --on-accent:#0b0c10; }
+
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--fg); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+.flow { stroke-dasharray: 4 7; animation: flow 2.6s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: -22; } }
+.fade-up { animation: fadeUp .6s ease both; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .flow, .fade-up { animation: none; }
+  html { scroll-behavior: auto; }
+}
