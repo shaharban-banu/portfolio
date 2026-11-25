@@ -12,7 +12,7 @@ export const profile = {
   github: "https://github.com/shaharban-banu",
   linkedin: "https://www.linkedin.com/in/shaharbanv-695a84145",
   resume: "/resume.pdf",
-  photo: "/images/profile.jpg", // add your photo here; initials show until then
+  photo: "/images/Shaharban.png", // add your photo here; initials show until then
 };
 
 export const stats = { value: 15, label: "end-to-end AI/ML solutions built" };
