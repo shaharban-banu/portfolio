@@ -1,6 +1,6 @@
 # Shaharban V: GenAI Engineer Portfolio
 
-A responsive portfolio site for a GenAI engineer and data scientist. It leads with ExecuMind AI, a multi-agent platform, and shows the architecture as the hero diagram. Light and dark themes are included (dark by default).
+A single-page portfolio for a GenAI engineer and data scientist, structured like a classic developer portfolio: Home (hero and featured projects), About (facts, skills, counter), Resume (experience, education, certifications), Projects (cards with case-study popups) and Contact. Dark by default with a light theme toggle.
 
 ## Technology stack
 
@@ -19,14 +19,18 @@ Open http://localhost:3000. For a production check, run `npm run build` then `np
 
 ```
 app/            layout, page, global styles and theme variables
-components/     Hero, AgentGraph, Projects, About, Skills, Experience, Education, Contact
+components/     Hero, Featured, About, Resume, Projects, ProjectModal, Contact, AgentGraph, Visual
+public/         resume.pdf and images/ (add profile.jpg)
 data/content.js all text, links and project details
 ```
 
 ## Customize
 
 - **Content:** edit `data/content.js` (profile, about, projects, skills, experience, education).
-- **Project repository links:** set `repo` on each project in `data/content.js`. Until then, links go to your GitHub profile.
+- **Photo:** add `public/images/profile.jpg`. Initials show until then.
+- **Resume:** replace `public/resume.pdf`.
+- **Project links:** set `repo` on each project in `data/content.js` (the Iris project still points to your GitHub profile).
+- **Featured projects:** set `featured: true` and a `visual` on a project.
 - **Colors:** change the CSS variables in `app/globals.css` (`:root` for light, `.dark` for dark).
 - **Hero diagram:** edit the `agents` array in `components/AgentGraph.jsx`.
 - **Section order:** reorder components in `app/page.jsx`.
