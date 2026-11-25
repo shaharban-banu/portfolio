@@ -10,7 +10,7 @@ export const profile = {
   email: "sonushaharban44@gmail.com",
   phone: "+91 9809043613",
   github: "https://github.com/shaharban-banu",
-  linkedin: "https://www.linkedin.com/in/shaharbanv-695a84145",
+  linkedin: "https://www.linkedin.com/in/shaharban-v-695a84145",
   resume: "/resume.pdf",
   photo: "/images/Shaharban.png", // add your photo here; initials show until then
 };
